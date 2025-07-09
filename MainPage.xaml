@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="SimpleBrowser.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button Content="←" Width="40" Click="BackButton_Click"/>
+            <Button Content="→" Width="40" Click="ForwardButton_Click"/>
+            <Button Content="↻" Width="40" Click="RefreshButton_Click"/>
+            <Button Content="📌" Width="40" Click="PinButton_Click"/>
+        </StackPanel>
+
+        <WebView x:Name="Browser" Grid.Row="1" NavigationCompleted="Browser_NavigationCompleted"/>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <TextBox x:Name="AddressBar" Width="285" Margin="5" KeyUp="AddressBar_KeyUp"/>
+            <Button Content="Go" Width="60" Click="GoButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
