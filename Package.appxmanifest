@@ -2,7 +2,7 @@
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
   <Identity Name="SimpleBrowser" Publisher="CN=User" Version="1.3.0.0" />
   <!-- Добавьте этот блок для PhoneIdentity -->
-  <mp:PhoneIdentity PhoneProductId="00000000-0000-0000-0000-000000000000" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <mp:PhoneIdentity PhoneProductId="1B4B6B54-CC3A-4DFC-B09E-9FC7434D36C5" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>SimpleBrowser</DisplayName>
     <PublisherDisplayName>Test</PublisherDisplayName>
